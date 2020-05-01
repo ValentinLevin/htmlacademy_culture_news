@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src:
+            url('../fonts/roboto-regular.woff2') format('woff2'),
+            url('../fonts/roboto-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    src:
+            url('../fonts/roboto-bold.woff2') format('woff2'),
+            url('../fonts/roboto-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    src:
+            url('../fonts/playfair-black.woff2') format('woff2'),
+            url('../fonts/playfair-black.woff') format('woff');
+}
+
+body {
+    width: 1440px;
+    min-width: 1440px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+header h1 {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+header ul li {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 15px;
+    margin: 0 54px 0 0;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+header div.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../files/promo.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 464px;
+    margin: 45px 0 0 0;
+}
+
+header div.promo img {
+    margin: 46px 0 0 0;
+}
+
+header div.promo a {
+    font-size: 72px;
+    font-family: "Roboto", Arial, sans-serif;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 32px 0 0 0;
+}
+
+header div.promo p {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+    margin-top: 139px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.reviews h2 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.review-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin-right: 30px;
+}
+
+.review-item:last-child {
+    margin-right: 0;
+}
+
+.review-item a {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-size: 23px;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.review-item a:hover {
+    color: #FF7931;
+}
+
+.review-item p {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 10px 0 0 0;
+}
+
+.subscription {
+    height: 556px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.subscription::before {
+    content: "";
+    position: absolute;
+    background-color: #f7f7f7;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.subscription::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 707px;
+    width: 707px;
+    top: -75px;
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.subscription h3 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 33px 0 0 0;
+}
+
+.subscription dl {
+    margin: 10px 0 0 0;
+    width: 368px;
+}
+
+.subscription dl dt {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.subscription dl dd {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 10px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription dl dd:not(:last-child)::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    opacity: 20%;
+    margin-top: 24px;
+}
+
+.subscription .btn {
+    box-sizing: border-box;
+    width: 170px;
+    height: 47px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 47px;
+    padding-right: 24px;
+    margin-top: 50px;
+    background: #ff7931 url("../img/arrow_forward.svg") no-repeat 117px center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #575757;
+    height: 295px;
+    margin-top: 50px;
+}
+
+footer .title {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    margin: 26px 0 0 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin: 32px 0 0 0;
+    padding: 0 0 46px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+footer ul li {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 15px;
+    margin: 0 54px 0 0;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+footer .social {
+    margin-top: 42px;
+    display: flex;
+}
+
+footer .social a {
+    font-size: 0;
+    display: block;
+    height: 47px;
+    width: 47px;
+    margin: 0 14px 0 0;
+}
+
+footer .social a:last-child {
+    margin-right: 0;
+}
+
+footer .social a.instagram {
+    background: #ffffff url("../img/instagram_icon.svg") no-repeat center center;
+}
+
+footer .social a.facebook {
+    background: #ffffff url("../img/facebook_icon.svg") no-repeat center center;
+}
+
+footer .social a.twitter {
+    background: #ffffff url("../img/twitter_icon.svg") no-repeat center center;
+}
